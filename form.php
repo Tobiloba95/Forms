@@ -7,7 +7,7 @@
 
 <h1> Please Kindly fill the form </h1>
 
-<form method="get" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 Name: <input type="text" name="fname"><br>
 Phone Number: <input type="number" name="phoneno"><br>
 Email: <input type="email" name="email"><br>
@@ -16,7 +16,7 @@ Country: <input type="text" name="country"><br>
 </form>
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "GET"){
+if ($_SERVER["REQUEST_METHOD"] == "POST"){
 //collect value of input field
 $name = htmlspecialchars($_REQUEST['fname']);
 $number = htmlspecialchars($_REQUEST['phoneno']);
