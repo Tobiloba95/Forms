@@ -30,7 +30,7 @@ echo $name."<br>";
 }
 
 if (empty($number)) {
-echo "Number is empty <br>";
+echo "No Number <br>";
 }
 else{
 echo $number."<br>";
