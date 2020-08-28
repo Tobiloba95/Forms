@@ -1,27 +1,29 @@
-<!DOCTYPE html>
 <html>
 <head>
-<title> FORM </title>
+<title>FORMS</title>
 </head>
 <body>
-
-<h1> Please Kindly fill the form </h1>
+<h1>Kindly Fill the Form</h1>
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 Name: <input type="text" name="fname"><br>
 Phone Number: <input type="number" name="phoneno"><br>
 Email: <input type="email" name="email"><br>
 Country: <input type="text" name="country"><br>
+Institution: <input type="school" name="institution"><br>
 <input type = "submit">
 </form>
 
+
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
+if ($_SERVER["REQUEST_METHOD"] == "POST" ){
 //collect value of input field
-$name = htmlspecialchars($_REQUEST['fname']);
-$number = htmlspecialchars($_REQUEST['phoneno']);
-$email = htmlspecialchars($_REQUEST['email']);
-$country = htmlspecialchars($_REQUEST['country']);
+$name = $_POST['fname'];
+$number = $_POST['phoneno'];
+$email = $_POST['email'];
+$country = $_POST['country'];
+$institution = $_POST['institution'];
+
 if (empty($name)) {
 echo "Name is empty <br>";
 }
@@ -30,7 +32,7 @@ echo $name."<br>";
 }
 
 if (empty($number)) {
-echo "Number is empty <br>";
+echo "No Number <br>";
 }
 else{
 echo $number."<br>";
@@ -49,9 +51,20 @@ echo "Country is empty <br>";
 else{
 echo $country."<br>";
 }
+
+if (empty($institution)) {
+echo "Institution is empty <br>";
+}
+else{
+echo $institution."<br>";
+}
+
 }
 
 
 ?>
 </body>
 </html>
+
+
+

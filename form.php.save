@@ -52,6 +52,3 @@ echo $country."<br>";
 }
 
 
-?>
-</body>
-</html>
