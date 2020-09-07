@@ -84,7 +84,7 @@ function test_input($data) {
   E-mail: <input type="text" name="email">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
-  Phone Number: <input type="number" name="phone_number">
+  Phone Number: <input type="number" name="phone_number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxLength="11">
   <span class="error">* <?php echo $phone_numberErr;?></span>
   <br><br>
   Website: <input type="text" name="website">
