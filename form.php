@@ -10,7 +10,7 @@
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 Name: <input type="text" name="fname"><br>
 Phone Number: <input type="number" name="phoneno"><br>
-Email: <input type="text" name="email"><br>
+Email: <input type="email" name="email"><br>
 Country: <input type="text" name="country"><br>
 <input type = "submit">
 </form>

@@ -64,13 +64,13 @@ function test_input($data) {
   Name: <input type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
   <br><br>
-  E-mail: <input type="text" name="email">
+  E-mail: <input type="email" name="email">
   <span class="error">* <?php echo $emailErr;?></span>
   <br><br>
   Phone Number: <input type="number" name="phone_number">
   <span class="error">* <?php echo $phone_numberErr;?></span>
   <br><br>
-  Website: <input type="text" name="website">
+  Website: <input type="url" name="website">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
   Comment: <textarea name="comment" rows="5" cols="40"></textarea>

@@ -30,7 +30,7 @@ function test_input($data) {
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   Name: <input type="text" name="name" placeholder="name">
   <br><br>
-  E-mail: <input type="text" name="email" placeholder="email">
+  E-mail: <input type="email" name="email" placeholder="email">
   <br><br>
   Phone_Number: <input type="number" name="phonenumber" placeholder="number">
   <br><br>
